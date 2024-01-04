@@ -8,7 +8,7 @@ const setAuthToken = (token) => {
 };
 
 const axiosBaseUrl = () => {
-  axios.defaults.baseURL = "http://192.168.88.40:4000/v1"
+  axios.defaults.baseURL = "http:localhost:3000"
   return axios;
 };
 

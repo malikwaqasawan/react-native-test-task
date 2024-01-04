@@ -5,7 +5,7 @@ import thunk from "redux-thunk";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { createWhitelistFilter } from 'redux-persist-transform-filter';
 
-import authSlice from "../slices/auth-slice";
+import imageSlice from "../slices/image-slice";
 
 const authReduxWhitelist = createWhitelistFilter('auth');
 
@@ -17,7 +17,7 @@ const persistConfig = {
 };
 
 const reducers = combineReducers({
-  auth: authSlice,
+  images: imageSlice
 });
 
 const rootReducer = (state, action) => {
